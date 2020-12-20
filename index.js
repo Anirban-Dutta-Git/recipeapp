@@ -23,11 +23,11 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 // DB connect
 const client = new Client({
-  user: "ignat",
-  host: "localhost",
-  database: "recipes",
-  password: "12345",
-  port: 5432
+  user: $USER,
+  host: $HOST,
+  database: $DATABASE,
+  password: $PASSWORD,
+  port: $PORT
 });
 
 client.connect();
