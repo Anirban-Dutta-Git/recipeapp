@@ -23,11 +23,11 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 // DB connect
 const client = new Client({
-  user: "$USER",
-  host: "$HOST",
-  database: "$DATABASE",
-  password: "$PASSWORD",
-  port: "$PORT"
+  user: process.env.USER,
+  host: process.env.HOST,
+  database: process.env.DATABASE,
+  password: process.env.PASSWORD,
+  port: process.env.PORT
 });
 
 client.connect();
